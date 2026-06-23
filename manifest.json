@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-accessibility-audit",
-  "version": "1.0.0",
-  "description": "Accessibility Audit & Remediation — WCAG 2.2 scanning for color contrast, keyboard nav, screen reader, ARIA compliance",
+  "version": "1.0.1",
+  "description": "Accessibility Audit & Remediation \u2014 WCAG 2.2 scanning for color contrast, keyboard nav, screen reader, ARIA compliance",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,9 +9,16 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-accessibility-audit",
   "homepage": "https://cortexprism.io/marketplace/plugins/accessibility-audit",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "a11y_scan", "description": "Scan page for WCAG 2.2 violations", "params": [] },
+    {
+      "name": "a11y_scan",
+      "description": "Scan page for WCAG 2.2 violations",
+      "params": []
+    },
     {
       "name": "a11y_suggest_fixes",
       "description": "Get fix recommendations with code",
@@ -22,9 +29,20 @@
       "description": "Auto-remediate common accessibility issues",
       "params": []
     },
-    { "name": "a11y_generate_report", "description": "Generate compliance report", "params": [] }
+    {
+      "name": "a11y_generate_report",
+      "description": "Generate compliance report",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
